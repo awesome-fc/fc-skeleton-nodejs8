@@ -25,7 +25,11 @@ yarn install
 ## 编译
 
 ```bash
+# 生成编译
 yarn build
+
+# 开发编译（这种编译方式不会进行代码混淆，方便开发调试）
+yarn dev
 ```
 
 ## 本地运行函数
