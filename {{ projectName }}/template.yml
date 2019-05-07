@@ -1,0 +1,14 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Resources:
+  {{ projectName }}: # service name
+    Type: 'Aliyun::Serverless::Service'
+    Properties:
+      Description: 'The code is transferred from es6 to es5 and packaged as a single file'
+    {{ projectName }}: # function name
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.handler
+        Runtime: nodejs8
+        CodeUri: './dist'
+        Timeout: 60
