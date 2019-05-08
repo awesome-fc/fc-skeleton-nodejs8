@@ -10,7 +10,8 @@
             "localRoot": "${workspaceFolder}/dist",
             "remoteRoot": "/code",
             "protocol": "inspector",
-            "stopOnEntry": false
-        }
+            "sourceMaps": true,
+            "stopOnEntry": false,
+            "outFiles": ["${workspaceRoot}/dist/**/*.js"]        }
     ]
 }
